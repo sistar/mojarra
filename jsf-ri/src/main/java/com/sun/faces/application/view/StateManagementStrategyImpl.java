@@ -380,9 +380,9 @@ public class StateManagementStrategyImpl extends StateManagementStrategy {
                     child = (UIComponent) saver.restore(context);
                 } else {
                     // TODO change it to a logging statement.
-                    System.out.println(
-                            "Unable to find state for component with clientId '" + 
-                            struct.clientId + "', not restoring it.");
+                    //System.out.println(
+                    //        "Unable to find state for component with clientId '" + 
+                    //        struct.clientId + "', not restoring it.");
                 }
             }
             if (child != null) {
@@ -396,9 +396,9 @@ public class StateManagementStrategyImpl extends StateManagementStrategy {
             }
         } else {
             // TODO change it to a logging statement.
-            System.out.println(
-                    "Unable to find parent component with clientId '" + 
-                    struct.parentClientId + "', not adding child.");
+            //System.out.println(
+            //        "Unable to find parent component with clientId '" + 
+            //        struct.parentClientId + "', not adding child.");
         }
     }
     
